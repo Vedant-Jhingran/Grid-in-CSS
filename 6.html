@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            background-color: rgb(93, 93, 231);
+            border: 3px solid black;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            padding: 10px;
+        }
+
+        .time {
+            grid-row: 1/ span 2;
+            background-color: rgb(224, 53, 53);
+            border: 1px dashed black;
+            padding: 30px 20px;
+            font-weight: bold;
+        }
+
+        .monday {
+            background-color: purple;
+            align-self: center;
+            padding: 15px;
+            font-weight: bold;
+            border: 1px dashed black;
+        }
+
+        .subject1 {
+            background-color: aquamarine;
+            align-self: center;
+            padding: 15px;
+            border: 1px dashed black;
+        }
+
+        .subject2right {
+            background-color: rgb(11, 173, 173);
+            align-self: center;
+            padding: 15px;
+            border: 1px dashed black;
+            grid-column: 7/9;
+        }
+        
+        .games {
+            background-color: rgb(8, 112, 12);
+            align-self: center;
+            padding: 15px;
+            border: 1px dashed black;
+            grid-column: 7/9;
+            font-weight: bold;
+        }
+
+        .subject2left {
+            background-color: rgb(11, 173, 173);
+            align-self: center;
+            padding: 15px;
+            border: 1px dashed black;
+            grid-column: 2/4;
+        }
+
+        .lunch {
+            background-color: yellow;
+            align-self: center;
+            padding: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>School Timetable</h1>
+    <div class="grid">
+        <div class="time">TIME</div>
+        <div class="time">08:00 AM - 09:00 AM</div>
+        <div class="time">09:00 AM - 10:00 AM</div>
+        <div class="time">10:00 AM - 11:00 AM</div>
+        <div class="time">11:00 AM - 12:00 PM</div>
+        <div class="time">12:00 PM - 02:00 PM</div>
+        <div class="time">02:00 PM - 03:00 PM</div>
+        <div class="time">03:00 PM - 04:00 PM</div>
+        <div class="monday">Monday</div>
+        <div class="subject1">English</div>
+        <div class="subject1">Biology</div>
+        <div class="subject1">Physics</div>
+        <div class="subject1">Chemistry</div>
+        <div class="lunch">L</div>
+        <div class="subject2right">Chemistry Lab</div>
+        <div class="monday">Tuesday</div>
+        <div class="subject2left">Biology LAB</div>
+        <div class="subject1">Physics</div>
+        <div class="subject1">Chemistry</div>
+        <div class="lunch">U</div>
+        <div class="subject1">English</div>
+        <div class="subject1">Biology</div>
+        <div class="monday">Wednesday</div>
+        <div class="subject1">English</div>
+        <div class="subject1">Biology</div>
+        <div class="subject1">Physics</div>
+        <div class="subject1">Chemistry</div>
+        <div class="lunch">N</div>
+        <div class="games">Games</div>
+        <div class="monday">Thursday</div>
+        <div class="subject2left">Biology LAB</div>
+        <div class="subject1">Physics</div>
+        <div class="subject1">Chemistry</div>
+        <div class="lunch">C</div>
+        <div class="subject1">English</div>
+        <div class="subject1">Biology</div>
+        <div class="monday">Friday</div>
+        <div class="subject1">English</div>
+        <div class="subject1">Biology</div>
+        <div class="subject1">Physics</div>
+        <div class="subject1">Chemistry</div>
+        <div class="lunch">H</div>
+        <div class="subject2right">Physics Lab</div>
+        <div class="monday">Saturday</div>
+        <div class="subject2left">Biology LAB</div>
+        <div class="subject1">Physics</div>
+        <div class="subject1">Chemistry</div>
+        <div class="lunch">Break</div>
+        <div class="games">LET OFF</div>
+    </div>
+</body>
+</html>
